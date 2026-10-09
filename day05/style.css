@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.clock {
+    font-size: 50px;
+    text-align: center;
+}
+
+.clock span {
+    font-size: 1.5em;
+}
+
+.date {
+    margin-top: 0.6em;
+    font-size: 0.5em;
+}
