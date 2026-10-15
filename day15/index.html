@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <!--Header-->
+        <header class="header">
+            <div>
+                <h1>JENGA <span>BMI</span></h1>
+                <p>Body Mass Index Calculator</p>
+            </div>
+        </header>
+        
+        <form id="bmiform">
+            <div class="form-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" min="0.1"
+                step="any" placeholder="e.g. 70"
+                required>
+                </div>
+
+                <div class="form-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" min="0.1"
+                step="any" placeholder="e.g. 165">
+                </div>
+                
+                <button type="submit" class="calculate-btn">Calculate BMI</button>
+                  <button type="reset" class="reset-btn">Calculate BMI</button>
+        </form>
+
+
+        <!--Result-->
+        <section class="result" id="result" hidden>
+            <p>Your BMI Result</p>
+            <h3 id="bmiValue">0.0</h3>
+
+            <strong id="bmiCategory">Category</strong>
+            <p id="bmiMessage" class="resut-message"></p>
+        </section>
+    </main>
+</body>
+</html>
